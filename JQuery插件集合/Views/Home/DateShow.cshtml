@@ -1,0 +1,17 @@
+﻿@{
+    Layout = "~/Views/_Layout.cshtml";
+}
+<div>
+    <h1>日期选择器</h1>
+    选择日期:<input type="text" id="txtdate" readonly />
+    选择日期:<input type="text" id="txtdate2" readonly />
+    <input type="button" value="查看选择的日期" onclick="GetDate()" />
+</div>
+<script>
+    //初始化
+    $.AddDate(['#txtdate', '#txtdate2']);
+    //按钮点击事件
+    function GetDate() {
+        alert('选择器一的值为:' + $('#txtdate').val()+'\n'+'选择器二的值为:'+$('#txtdate2').val());
+    }
+</script>

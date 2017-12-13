@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <!--Public-->
+    <script src="~/JS/Public/jquery-1.8.3.min.js"></script>
+    <script src="~/JS/Public/all_need.js"></script>
+    <!--DatePicker 日期选择器-->
+    <script src="~/JS/DatePicker/laydate.js"></script>
+    <link rel="stylesheet" href="~/CSS/DatePicker/laydate.css" />
+    <!--KingEditor 富文本编辑器-->
+    <script src="~/JS/KindEditor/kindeditor-min.js"></script>
+    <script src="~/JS/KindEditor/lang/zh-CN.js"></script>
+    <link rel="stylesheet" href="~/JS/KindEditor/themes/default/default.css" />
+    <!--ImageUpload 图片上传-->
+    <link rel="stylesheet" href="~/CSS/ImageUpload/webuploader.css" />
+    <script src="~/JS/ImageUpload/webuploader.nolog.min.js"></script>
+</head>
+<body>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>
