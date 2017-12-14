@@ -1,0 +1,22 @@
+﻿@{
+    Layout = "~/Views/_Layout.cshtml";
+}
+<div class="area" style="margin-left:200px;position:relative;">
+    <input id="citypicker" readonly type="text" />
+    <input id="citypicker2" readonly type="text" />
+    <input id="citypicker3" readonly type="text" />
+    <input id="citypicker4" readonly type="text" />
+</div>
+<input type="button" onclick="myclick()" value="选择" />
+<script>
+    //根据ID设置需要设为洗去选择框的标签
+    $.AddCityPicker(['#citypicker', '#citypicker2', '#citypicker3', '#citypicker4']);
+
+    function myclick() {
+        var t1 = $('#citypicker').val();
+        var t2 = $('#citypicker2').val();
+        var t3 = $('#citypicker3').val();
+        var t4 = $('#citypicker4').val();
+        alert(t1 + '\n' + t2 + '\n' + t3 + '\n' + t4 + '\n');
+    }
+</script>

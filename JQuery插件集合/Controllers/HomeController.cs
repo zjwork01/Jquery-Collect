@@ -35,6 +35,13 @@ namespace JQuery插件集合.Controllers
             return View();
         }
 
+        //地区选择
+        public ActionResult AreaList()
+        {
+            SetTDK("地区选择");
+            return View();
+        }
+
 
         public void SetTDK(string title)
         {

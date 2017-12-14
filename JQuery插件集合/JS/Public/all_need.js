@@ -62,7 +62,7 @@ $.extend({
 });
 
 $.extend({
-    //添加图片上传按钮
+    //添加图片上传
     AddImageUpload: function (ids, upload, swfpath) {
         $.each(ids, function (index, value) {
             var img = $(value+' > img');
@@ -114,6 +114,15 @@ $.extend({
                 }
                 uploader.upload();
             });
+        })
+    }
+})
+
+$.extend({
+    //添加地区选择插件
+    AddCityPicker: function (ids) {
+        $.each(ids, function (index, value) {
+            $(value).citypicker();
         })
     }
 })
