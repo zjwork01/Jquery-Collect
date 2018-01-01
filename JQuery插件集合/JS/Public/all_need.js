@@ -48,7 +48,7 @@ $.extend({
                         'superscript', 'quickformat', 'selectall', '|', 'fullscreen', '/',
                         'formatblock', 'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold',
                         'italic', 'underline', 'strikethrough', 'lineheight', 'removeformat', '|',
-                        'table', 'hr', 'image'
+                        'table', 'hr', 'image','|','link'
                     ],
                     newlineTag: 'br',
                     afterBlur: function () {
